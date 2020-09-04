@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un pacto.</title>
+    <link rel="shortcut icon" href="images/hop.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&family=Istok+Web:ital@1&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class='d-flex justify-content-between'>
+            <div class="logo ml-3 mt-2">
+                <a href="index.html">
+                    <img src='images/hop.svg' alt="Un pacto.">
+                </a>
+
+            </div>
+            <div class='cart-icon mt-2 mr-3'>
+
+
+                <img src="images/beer-box.svg" class='show-cart' alt="cart">
+                <span class='cantidad'>0</span>
+
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <div class="cart mt-0">
+            <table id="cart-list" class='table table-dark mb-0'>
+                <thead>
+                    <tr>
+                        <th scope='col'>Nombre</th>
+                        <th scope='col'>Precio</th>
+                        <th scope='col'>Cantidad</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+
+
+            </table>
+            <button class='button empty'>Vaciar Carrito</button>
+
+
+
+        </div>
+
+
+        <main class='articles mt-5 d-flex flex-wrap'>
+            <div class="card" style="width: 18rem;">
+                <img src="images/Andes.webp" class="card-img-top" alt="...">
+                <div class="card text-right" style="width: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Andes Origen</h5>
+                        <p class="card-text">$100</p>
+                        <a href="#" class="add btn btn-dark" data-id='0'>Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/van.webp" class="card-img-top" alt="...">
+                <div class="card text-right" style="width: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Van Pur</h5>
+                        <p class="card-text">$250</p>
+                        <a href="#" class="add btn btn-dark" data-id='1'>Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/heineken.jpg" class="card-img-top" alt="...">
+                <div class="card text-right" style="width: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Heineken</h5>
+                        <p class="card-text">$200</p>
+                        <a href="#" class="add btn btn-dark" data-id='2'>Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/bavaria.webp" class="card-img-top" alt="...">
+                <div class="card text-right" style="width: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Bavaria</h5>
+                        <p class="card-text">$180</p>
+                        <a href="#" class="add btn btn-dark" data-id='3'>Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/amstel.webp" class="card-img-top" alt="...">
+                <div class="card text-right" style="width: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Amstel Premium</h5>
+                        <p class="card-text">$250</p>
+                        <a href="#" class="add btn btn-dark" data-id='4'>Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/erdinger.webp" class="card-img-top" alt="...">
+                <div class="card text-right" style="width: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Erdinger</h5>
+                        <p class="card-text">$250</p>
+                        <a href="#" class="add btn btn-dark" data-id='5'>Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/bavaria-red.png" class="card-img-top" alt="...">
+                <div class="card text-right" style="width: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Bavaria Red</h5>
+                        <p class="card-text">$200</p>
+                        <a href="#" class="add btn btn-dark" data-id='6'>Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/patagonia-amber.jpg" class="card-img-top" alt="...">
+                <div class="card text-right" style="width: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Patagonia Amber Lager</h5>
+                        <p class="card-text">$250</p>
+                        <a href="#" class="add btn btn-dark" data-id='7'>Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/patagonia-kune.png" class="card-img-top" alt="...">
+                <div class="card text-right" style="width: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Patagonia Kune</h5>
+                        <p class="card-text">$250</p>
+                        <a href="#" class="add btn btn-dark" data-id='8'>Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/mex.webp" class="card-img-top" alt="...">
+                <div class="card text-right" style="width: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Peñón del Águila</h5>
+                        <p class="card-text">$250</p>
+                        <a href="#" class="add btn btn-dark" data-id='9'>Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/cacao.webp" class="card-img-top" alt="...">
+                <div class="card text-right" style="width: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Peñón del Águila Cacao</h5>
+                        <p class="card-text">$250</p>
+                        <a href="#" class="add btn btn-dark" data-id='10'>Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="images/rabieta.webp" class="card-img-top" alt="...">
+                <div class="card text-right" style="width: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Rabieta Roja</h5>
+                        <p class="card-text">$200</p>
+                        <a href="#" class="add btn btn-dark" data-id='11'>Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
