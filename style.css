@@ -151,4 +151,8 @@ footer a i:active {
   .card {
     margin: 0.5rem;
   }
+  .cart {
+    width: 90%;
+    left: 5%;
+  }
 }
