@@ -131,3 +131,24 @@ footer a i:active {
   top: 25px;
   left: -25px;
 }
+
+@media (max-width: 600px) {
+  .carousel {
+    display: none;
+  }
+  body {
+    margin: 0 auto;
+  }
+  .texto {
+    width: 90%;
+  }
+  footer {
+    justify-content: center;
+  }
+  .articles {
+    width: 90%;
+  }
+  .card {
+    margin: 0.5rem;
+  }
+}
