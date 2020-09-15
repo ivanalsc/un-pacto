@@ -19,6 +19,11 @@ function registerEventListeners() {
   cartIcon.addEventListener("click", () => {
     cart.classList.toggle("open");
   });
+  document.addEventListener("DOMContentLoaded", () => {
+    cartArticles = JSON.parse(localStorage.getItem("carrito")) || [];
+
+    cartHTML();
+  });
 }
 
 function addBeer(e) {
@@ -88,6 +93,11 @@ function cartHTML() {
 
     container.appendChild(row);
   });
+
+  storageSincronization();
+}
+function storageSincronization() {
+  localStorage.setItem("carrito", JSON.stringify(cartArticles));
 }
 
 function cleanHTML() {
